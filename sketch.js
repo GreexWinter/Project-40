@@ -25,6 +25,7 @@ function preload(){
   fruit5_image = loadImage("images/pineapple2.png");
   fruitGroup = new Group();
 }
+
 function setup() {
   createCanvas(1000, 600);
   database = firebase.database();
@@ -33,7 +34,7 @@ function setup() {
   game.start();
 }
 
-function draw() {
+function draw(){
   background(backround_image);
 
   // Add conditions for gameStates and playerCount
